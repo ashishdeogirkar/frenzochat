@@ -1,0 +1,141 @@
+
+
+.mainback{
+	height:auto;
+	width: 100vw;
+background-image: url("backg.png");
+background-position: center;
+background-size: cover;
+overflow-x: hidden;
+  
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.chatview{
+	max-height: 78vh;
+	overflow-y: auto;
+
+
+}
+
+
+.allchat a:hover{
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.1);
+}
+
+
+
+
+.badge{
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+  }
+@keyframes shake {
+    0% { transform: translate(-1px, -1px) rotate(10deg); }
+    
+    100% { transform: translate(1px, 1px) rotate(-10deg); }
+}
+
+
+   .photo {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  
+  
+}
+
+.photo:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+
+.profilemenu{
+	display: none;
+	position: absolute;
+  overflow:  hidden;
+  height: 100%;
+  width: 100%;
+  animation: go .4s;
+  animation-timing-function: ease-in-out;
+  
+    animation-iteration-count: 1;
+  
+ 
+    
+}
+@keyframes go {
+    
+   0% { transform: translateX(-100%) rotate(0deg); } 
+   
+  
+}
+
+
+
+
+.profileheight{
+
+ max-height: 78vh;
+  overflow-y: auto;
+}
+
+#mymenu{
+
+	position: relative;
+}
+
+.hiddenchat{
+  
+  display: none;
+  
+  
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
